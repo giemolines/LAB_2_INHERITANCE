@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace LAB_2_INHERITANCE
 {
 	internal class Wages:Employee
@@ -23,7 +23,7 @@ namespace LAB_2_INHERITANCE
 
 		//Methods
 
-		public double getPay()
+		public override double getPay()
 		{
 			if (Hours > 40)
 			{
@@ -37,6 +37,11 @@ namespace LAB_2_INHERITANCE
 				return pay;
 			}
 		}
-	}
+        public override string ToString()
+        {
+            return $"ID: {base.ID} \nName: {base.Name} \nAddress: {base.Address} \nPhone: {base.Phone} \nSIN: {base.SIN} \nDOB: {base.DOB} \nDept: {base.Dept} \nPay: {getPay()}";
+        }
+
+    }
 }
 
