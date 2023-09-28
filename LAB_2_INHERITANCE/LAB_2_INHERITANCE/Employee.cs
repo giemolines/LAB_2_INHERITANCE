@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace LAB_2_INHERITANCE
 {
 	internal class Employee
@@ -34,8 +34,13 @@ namespace LAB_2_INHERITANCE
 
         public override string ToString()
         {
-			return $"ID: {this.ID} \n Name: {this.Name} \n Address: {this.Address} \n Phone: {this.Phone} \n SIN: {this.SIN} \b DOB: {this.DOB} \n Dept: {this.Dept}";
+			return $"ID: {this.ID} \nName: {this.Name} \nAddress: {this.Address} \nPhone: {this.Phone} \nSIN: {this.SIN} \nDOB: {this.DOB} \nDept: {this.Dept}";
         }
+
+		public virtual double getPay()
+		{
+			return 0.0;
+		}
     }
 }
 
