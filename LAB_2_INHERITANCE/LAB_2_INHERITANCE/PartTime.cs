@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 namespace LAB_2_INHERITANCE
 {
 	internal class PartTime: Employee

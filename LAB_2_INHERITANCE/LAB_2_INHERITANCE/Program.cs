@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq; // Import this for LINQ extension methods
@@ -18,7 +18,7 @@ namespace LAB_2_INHERITANCE
             
 
             // Read from "employees.txt" file
-            string[] lines = File.ReadAllLines("/Users/gie/Desktop/oop 2/LAB 2/LAB_2_INHERITANCE/LAB_2_INHERITANCE/employees.txt");
+            string[] lines = File.ReadAllLines("LAB_2_INHERITANCE/res/employees.txt");
 
             foreach (string line in lines)
             {
