@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace LAB_2_INHERITANCE
 {
 	internal class PartTime: Employee
@@ -19,15 +19,16 @@ namespace LAB_2_INHERITANCE
 		}
 		//Methods
 
-		public double getPay()
+		public override double getPay()
 		{
 			return Rate * Hours;
 		}
 
-		public new void ToString()
+		public override string ToString()
 		{
+           return $"ID: {this.ID} \nName: {this.Name} \nAddress: {this.Address} \nPhone: {this.Phone} \nSIN: {this.SIN} \nDOB: {this.DOB} \nDept: {this.Dept} \nPay: {getPay()}";
 
-		}
+        }
 	}
 }
 
